@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Procrasticounter",
+  "description": "This extension is countdown tool to help you curb your procrastination.",
+    "background": "procrasticounter.html",
+  "version": "1.0",
+
+
+  "browser_action": {
+   "default_icon": "img/icon.png",
+   "default_popup": "popup.html"
+  },
+
+"content_scripts": [
+    {
+    "all_frames": false,
+    "matches": ["<all_urls>"],
+    "exclude_matches": [],
+      "js": [
+        "js/jquery.min.js", "js/bgscroll.js"
+      ]
+    }
+  ],
+
+  "permissions": [
+   "activeTab"
+   ]
+
+  
+}

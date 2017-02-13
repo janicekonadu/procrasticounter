@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Procrasticounter</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <style type="text/css">
+    	body {
+    		    background: #00f367; /* For browsers that do not support gradients */
+    			background: -webkit-linear-gradient(#00f367, #38e1db); /* For Safari 5.1 to 6.0 */
+    			background: -o-linear-gradient(#00f367, #38e1db); /* For Opera 11.1 to 12.0 */
+    			background: -moz-linear-gradient(#00f367, #38e1db); /* For Firefox 3.6 to 15 */
+    			background: linear-gradient(#00f367, #38e1db); /* Standard syntax */
+
+    			font-family: 'Oswald', sans-serif;
+
+    			color: #fff;
+    	}
+
+    	form{
+    		text-align: center;
+    	}
+
+    	label, button{
+    		
+    		font-size: 14pt;
+
+    	}
+
+    	h1{
+    		text-align: center;
+    		width: 100%;
+
+    	}
+
+    	input[type="text"], input[type="datetime-local"]{
+    		border-radius: 5px;
+    		border: 0px;
+    		text-align: center;
+    	}
+
+    	button{
+
+    		background: #fff;
+    		border-radius: 5px;
+    		border: 0;
+    		color: #16cdc6;
+    		text-transform: uppercase;
+    		font-family: 'Oswald', sans-serif;
+    		letter-spacing: 1px;
+    		padding: 0, 10px 0 10px;
+    		margin-top: 20px;
+    		
+    	}
+    </style>
+  </head>
+  <body>
+    <h1>
+	    <img src="img/sparkly.gif" /> 
+	    Ready?
+	    <img src="img/sparkly.gif" />
+    </h1>
+
+    <form action="procrasticounter.html" method="GET" target="_blank">
+	    <label for="event" class="enterLabel"> Enter event:</label>
+	    <input type="text" name="eName" class="eName" value="" id="event"/>
+
+	    <br/><br/>
+
+	    <label for="myLocalDate" class="enterLabel">Enter date and time:</label>
+	    <input type="datetime-local" name="date" id="myLocalDate" value="">
+	    
+	    <br /><br />
+
+	    <button id="startButton" ><b>Procrasticount!</b></button>
+	</form>
+    
+    
+  </body>
+</html>

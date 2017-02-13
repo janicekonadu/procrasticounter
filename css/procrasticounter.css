@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html{
+
+	height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat; 
+
+
+}
+
+body{
+
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+
+	color: #fff;
+	font-size: 48pt;
+}
+
+ 
+.timebox{
+	margin-right: 80px;
+	font-size: 100pt;
+	text-align: center;
+	display: inline-block;
+	 
+}
+
+#clock{
+
+	margin: 0 auto;
+	padding: 0 0 0 50px;
+	width: 72%;
+	height:200px;
+	text-align: center;
+}
+
+#logo{
+	margin-top: 80px;
+}
+
+h1{
+	font-size: 32pt;
+	text-transform: uppercase;
+	height: 100px;
+	letter-spacing: 10px;
+}
+
+h6{
+	font-size: 10pt;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 80px;
+
+}
+
+p{
+	font-size: 14pt;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.wrap {
+  height: 100vh;  
+  position: relative;
+  overflow: hidden;
+    
+  }
+  
+.bg {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    background: url('../img/bg.png') no-repeat center center;
+    background-size: cover;
+
+    transform: scale(1.1);
+  }
+
+#footer {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	margin: 0 auto;
+	z-index: 10;
+	height: 3em;
+	margin-top: 130px;
+}
+
+#footer a{
+	text-decoration: none;
+	color: white;
+}
+
+
+@media screen and (max-width: 1300px) {
+        #clock{
+        	zoom: .7;
+        }
+    }
+}
